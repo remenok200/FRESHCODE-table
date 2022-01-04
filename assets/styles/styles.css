@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0.4%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    overflow: hidden; 
+    border-radius: 3%;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+
+    /* Первое свойство - расстояние между ячейками.
+    Второе - предотвращает задвоение рамок. */
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+caption {
+    background: rgb(178, 177, 218);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+tr {
+    font-size: 17px;
+}
+
+td {
+    width: 5%;
+}
+
+thead th {
+    font-weight: bold;
+    color: white;
+}
+
+/* <THEAD> */
+
+/* section 'choose your plan' */
+thead tr:first-child th:first-child {
+    background: #7988ad;
+}
+/* end section 'choose your plan' */
+
+/* section 'starter' */
+thead tr:nth-child(1) th:nth-child(2) {
+    background: #4e628f;
+}
+thead tr:nth-child(2) th:nth-child(1) {
+    background: #4e628f;
+}
+thead tr:nth-child(2) th:first-child {
+    font-size: 30px;
+    padding: 3%;
+}
+/* end section 'starter' */
+
+/* section 'econom' */
+thead tr:nth-child(1) th:nth-child(3) {
+    background: #2a3f73;
+}
+thead tr:nth-child(2) th:nth-child(2) {
+    background: #2a3f73;
+}
+thead tr:nth-child(2) th:nth-child(2) {
+    font-size: 30px;
+    padding: 3%;
+}
+/* end section 'econom' */
+
+/* section 'standard' */
+thead tr:nth-child(1) th:nth-child(4) {
+    background: #0e2454;
+}
+thead tr:nth-child(2) th:nth-child(3) {
+    background: #0e2454;
+}
+thead tr:nth-child(2) th:nth-child(3) {
+    font-size: 30px;
+    padding: 3%;
+}
+/* end section 'standard' */
+
+/* section 'professional' */
+thead tr:nth-child(1) th:nth-child(5) {
+    background: #010d36;
+}
+thead tr:nth-child(2) th:nth-child(4) {
+    background: #010d36;
+}
+thead tr:nth-child(2) th:nth-child(4) {
+    font-size: 30px;
+    padding: 3%;
+}
+/* end section 'professional' */
+
+/* </THEAD> */
+
+/* <TBODY> */
+tbody tr:nth-child(odd) td:nth-child(odd) {
+    background: #dcdcdc;
+}
+tbody tr:nth-child(even) td:nth-child(even) {
+    background: #f3f3f3;
+}
+tbody tr:nth-child(even) td:nth-child(odd) {
+    background: #ededed;
+}
+tbody tr:nth-child(odd) td:nth-child(even) {
+    background: #e8e8e8;
+}
+/* </TBODY> */
+
+/* <TFOOT> */
+tfoot tr:first-child td:nth-child(even) {
+    background: #e8e8e8;
+}
+tfoot tr:first-child td:nth-child(odd) {
+    background: #dcdcdc;
+}
+
+tfoot button {
+    border: 1px solid black;
+    width: 50%;
+    height: 35px;
+    color: #686b75;
+    font-weight: bold;
+    background: #d4d4d4;
+    margin-left: 25%;
+}
+
+tfoot tr {
+    height: 75px;
+}
+/* </TFOOT> */
